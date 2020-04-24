@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  font-family: "Fira Sans", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.3rem;
+}
+
+h2 {
+  margin: 2.5rem 0;
+}
+
+p {
+  margin-bottom: 3rem;
+}
+
+header {
+  padding: 3rem 0;
+  background-color: #23424a;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.breakline {
+  height: 1.5rem;
+  border-top: 6px solid black;
+  border-bottom: 2px solid black;
+}
+
+.breakline-single {
+  border-top: 3px solid black;
+  margin-top: 6rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+form {
+  text-align: left;
+}
+
+legend {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 3rem 0 1rem 0;
+}
+
+label {
+  display: block;
+  padding: 3rem 0 1.5rem 0;
+}
+
+fieldset {
+  border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select[id="state"],
+textarea {
+  font-size: 2rem;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.2rem;
+  transition-duration: 0.3s;
+  background-color: #e4e4e4;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select[id="state"]:focus,
+textarea:focus {
+  box-shadow: inset 0 0 0 0.5rem #23424a;
+  background-color: #c7d1d3;
+}
+
+textarea {
+  font-size: 3rem;
+}
+
+input[id="code"] {
+  width: 30%;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+input[required]:placeholder-shown {
+  border: solid 0.2rem #23424a;
+}
+
+::placeholder {
+  font-style: italic;
+  text-align: right;
+  color: #adadad;
+  font-weight: bold;
+}
+
+input[id="number"]::placeholder {
+  text-align: left;
+}
+
+textarea {
+  height: 20rem;
+}
+
+.light {
+  display: inline;
+  padding: 0;
+  margin-left: 1rem;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+.light,
+.btn {
+  cursor: pointer;
+}
+
+/* Button */
+
+.btn {
+  width: 100%;
+  margin-top: 3rem;
+  padding: 2rem;
+  font-size: 2.5rem;
+  background-color: #23424a;
+  color: white;
+  transition-duration: 0.8s, 0.4s;
+  transition-property: border-radius, backgroun-color;
+}
+
+.btn:hover {
+  border-radius: 2rem;
+  background-color: #006685;
+}
+
+.btn:active {
+  background-color: #01222c;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 5rem 0 5rem 0;
+}
+
+/* @Media min-width 768px */
+
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+    max-width: 700px;
+  }
+
+  legend {
+    padding: 3rem 0 3rem 0;
+  }
+
+  .name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select[id="state"] {
+    width: 75%;
+  }
+
+  .code-01 {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  input[id="code"] {
+    width: 37.5%;
+  }
+
+  label {
+    padding: 0;
+  }
+
+  .news label {
+    padding: 3rem 0 2rem 0;
+  }
+}

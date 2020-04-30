@@ -142,14 +142,20 @@ textarea {
   margin-top: 3rem;
   padding: 2rem;
   font-size: 2.5rem;
-  background-color: #23424a;
-  color: white;
+
+  border: 5px solid;
+  border-image-source: linear-gradient(
+    45deg,
+    rgb(34, 65, 73),
+    rgb(103, 161, 175)
+  );
+  border-image-slice: 1;
+
   transition-duration: 1s;
   outline: none;
 }
 
 .btn:hover {
-  border-radius: 10rem;
   background-color: #ffffff;
   color: #23424a;
 }
@@ -165,7 +171,7 @@ footer {
   margin-top: 7rem;
   text-align: center;
   padding: 3rem 0 3rem 0;
-  background-color: #23424a;
+  background-color: rgb(34, 65, 73);
   color: white;
 }
 

@@ -14,9 +14,13 @@ Add a new background-color to one of the main sections of the site.
 Add additional styling enhancements to the form by adding transitions to the focus states of form field elements.
 Browsers tested for compatibility:
 
-Chrome
-Firefox
-Edge
+Browsers tested for compatibility:
+
+* Chrome
+* Firefox
+* Edge
+* Safari
+
 Grade: Exceeds Expectations
 
 
